@@ -1,5 +1,4 @@
-var script = require('..//script.js')
-var lib = require('..//lib.js')
+var librepod = require('librepod');
 
 module.exports={
 	call: function(i,callback)
@@ -93,10 +92,10 @@ module.exports={
 function controlFlow(expression,parm, callback){
     if(expression.indexOf("[") == 0 && expression.indexOf("]") == expression.length-1){
         var e = expression.split(" ");
-        lib.call(e[0].replace("[",""),e[e.length-1].replace("]",""),parm, callback);
+        librepod.lib.call(e[0].replace("[",""),e[e.length-1].replace("]",""),parm, callback);
         
     }else{
-        script.call(expression,parm,callback);
+        librepod.script.call(expression,parm,callback);
     }
 }
         

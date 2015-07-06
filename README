@@ -1,0 +1,14 @@
+Dylan Thomas
+diltarget13@gmail.com
+
+This is the a Librepod implementation made by the developer.
+Install Librepod
+
+npm install librepod -g
+
+Then download this respository
+
+cd LibrepodPlus
+librepod
+
+this will start the server have fun kids :)

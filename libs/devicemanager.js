@@ -1,15 +1,15 @@
 //deviceManager.js
 
-var lib = require('..//lib.js');
+var librepod = require('librepod');
 
 module.exports = {
     checkDead: function(i,callback){
         if(i == undefined || i.store == undefined || i.timeout == undefined) return;
         var stamp = Math.floor(Date.now() / 1000);
         
-        lib.call("datastore","getStore",i,function(out){
+        librepod.lib.call("datastore","getStore",i,function(out){
             console.log(out);
-            lib.call("log","getStore",i,function(log){
+            librepod.lib.call("log","getStore",i,function(log){
                 console.log(log);
                 var mLog = JSON.parse(log);
                 var dead = []
