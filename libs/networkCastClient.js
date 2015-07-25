@@ -21,7 +21,7 @@ module.exports = {
         });
         
         client.on('data',function(data){
-            callback(data);
+            callback(JSON.parse(data));
         });
         
     }

@@ -7,7 +7,7 @@ module.exports = {
         if(i == undefined) return;
         
         Object.keys(conn[o.id]).forEach(function(k){
-            conn[o.id][k].write(JSON.strinify(i));
+            conn[o.id][k].write(JSON.stringify(i));
         });
     
     },event: function(o,callback){
