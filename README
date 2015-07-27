@@ -5,10 +5,13 @@ This is the a Librepod implementation made by the developer.
 Install Librepod
 
 npm install librepod -g
-
-Then download this respository
-
-cd LibrepodPlus
+npm install librepod
+git clone https://github.com/diltarget/LibrepodPlus
+mkdir LibrepodLibs
+cp LibrepodPlus LibrepodLibs
+mkdir newProject
+cd newProject
+librepod init LibrepodPlus
 librepod
 
-this will start the server have fun kids :)
+open your web browser to localhost:8000/?object=math&call=add&a=60&b=12
