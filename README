@@ -4,11 +4,14 @@ diltarget13@gmail.com
 This is the a Librepod implementation made by the developer.
 Install Librepod
 
-npm install librepod -g
+cd
 npm install librepod
-git clone https://github.com/diltarget/LibrepodPlus
+cd node_modules/librepod
+sudo npm link
 mkdir LibrepodLibs
-cp LibrepodPlus LibrepodLibs
+cd LibrepodLibs
+git clone https://github.com/diltarget/LibrepodPlus.git
+cd
 mkdir newProject
 cd newProject
 librepod init LibrepodPlus
